@@ -23,12 +23,12 @@ $favoris = $result->fetchAll(PDO::FETCH_ASSOC);
                 foreach($favoris as $favori){
             ?>
             <tr>
-                <td class = "border-t-[3px] border-slate-500"> <?=$favori['id_favori']; ?></td>
-                <td class = "border-t-[3px] border-slate-500"> <?php echo $favori['libelle']; ?></td>
-                <td class = "border-t-[3px] border-slate-500"> <?php echo $favori['date_creation']; ?></td>
-                <td class = "border-t-[3px] border-slate-500"> <?php echo $favori['url']; ?></td>
-                <td class = "border-t-[3px] border-slate-500"> Edit</td>
-                <td class = "border-t-[3px] border-slate-500"> <p class= "rounded-xl border-red"> Delete</p></td>
+                <td class = "border-t-[3px] border-slate-500 py-3"> <?=$favori['id_favori']; ?></td>
+                <td class = "border-t-[3px] border-slate-500 py-3"> <?php echo $favori['libelle']; ?></td>
+                <td class = "border-t-[3px] border-slate-500 py-3"> <?php echo $favori['date_creation']; ?></td>
+                <td class = "border-t-[3px] border-slate-500 py-3"> <?php echo $favori['url']; ?></td>
+                <td class = "border-t-[3px] border-slate-500 py-3"> <p class= "mx-2 text-center rounded-l bg-yellow-500 hover:text-white">Edit</td>
+                <td class = "border-t-[3px] border-slate-500 py-3"> <p class= "mx-2 text-center text-white rounded-l bg-red-700 hover:text-black"> Delete</p></td>
             </tr>
             <?php
                 }
