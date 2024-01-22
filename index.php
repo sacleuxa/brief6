@@ -1,6 +1,7 @@
 <?php
 $lang ="fr";
 include("src/function.php");
+include("tailwind.config.js");
 
 // tableau des étudiants
 $etudiants = array (
@@ -62,7 +63,7 @@ echo "</pre>";?>
 
 
 
-<?php include("template_parts/header.php"); ?>
+<?php include("src/header.php"); ?>
 <section class="cards">
     <?php
     foreach ($etudiants as $etudiant) {
@@ -78,12 +79,9 @@ echo "</pre>";?>
                     <?php echo $etudiant['description']; ?>
                 </span>
             </div>
-            <button><?php echo TEXTE_BUTTON; ?></button>
         </div>
     <?php
     }
     ?>
 
 </section>
-
-<?php include("template_parts/footer.html"); ?>
